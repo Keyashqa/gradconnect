@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams} from 'react-router-dom';
 import "./Edit.css"
 
 const Edit = ({
@@ -11,7 +11,6 @@ const Edit = ({
   handleEdit,
 }) => {
   const { id } = useParams();
-  const navigate=useNavigate();
 
   useEffect(() => {
     const selectedPost = post.find((p) => p.id.toString() === id);
