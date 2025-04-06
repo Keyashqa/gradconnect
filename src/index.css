@@ -1,0 +1,277 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* ========== App-wide Styles ========== */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Header (GradConnect) */
+.header {
+  color: violet;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+/* Center individual components */
+.newPost,
+.about,
+.footer {
+  text-align: center;
+  width: 100%;
+}
+
+/* ========== Navigation Styles (Navi.css merged) ========== */
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* Search Form */
+.searchForm {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.searchForm input {
+  width: 250px;
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.searchForm input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Navigation Links */
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+ul li a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Base styles for all devices */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+  margin-bottom: 0.5rem;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Container for main app */
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Responsive Post Content */
+.postpage-main,
+.postpage-article {
+  padding: 1rem;
+}
+
+.postpage-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.postpage-date {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.postpage-content {
+  font-size: 1.1rem;
+}
+
+/* Suggested posts */
+.postpage-suggestions {
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+.postpage-suggestion {
+  background-color: #fff;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.suggestion-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.suggestion-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.suggestion-date {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.suggestion-preview {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Delete Button */
+.delete-btn {
+  margin-top: 1rem;
+  background-color: #ff4d4f;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #ff2e31;
+}
+
+/* Link */
+.postpage-back {
+  display: inline-block;
+  margin-top: 1.5rem;
+  text-decoration: none;
+  color: #0066cc;
+}
+
+.postpage-back:hover {
+  text-decoration: underline;
+}
+
+
+/* 📱 Responsive Breakpoints */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .App {
+    padding: 0.5rem;
+  }
+
+  .postpage-title {
+    font-size: 1.6rem;
+  }
+
+  .postpage-content {
+    font-size: 1rem;
+  }
+
+  .suggestion-title {
+    font-size: 1rem;
+  }
+
+  .suggestion-preview {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .postpage-title {
+    font-size: 1.3rem;
+  }
+
+  .postpage-content {
+    font-size: 0.95rem;
+  }
+
+  .suggestion-title {
+    font-size: 0.95rem;
+  }
+
+  .suggestion-preview {
+    font-size: 0.85rem;
+  }
+
+  .delete-btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Ensure the full height layout */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Make the App fill the page and use column flex layout */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Make main content grow to push footer down */
+main {
+  flex: 1;
+}

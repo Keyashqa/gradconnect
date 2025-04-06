@@ -1,0 +1,74 @@
+/* Post Container */
+.post-card {
+    width: 400px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Post Header */
+  .post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    background: url('https://via.placeholder.com/40') center/cover;
+    border-radius: 50%;
+  }
+  
+  /* Post Title */
+  .post-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Post Date */
+  .post-date {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 10px;
+  }
+  
+  /* Post Content */
+  .post-content p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  /* Post Actions (Like, Comment, Share) */
+  .post-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .post-actions button {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px;
+    transition: 0.2s;
+  }
+  
+  .like-btn:hover {
+    color: red;
+  }
+  
+  .comment-btn:hover {
+    color: blue;
+  }
+  
+  .share-btn:hover {
+    color: green;
+  }
+  

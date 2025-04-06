@@ -1,0 +1,76 @@
+.PostPage {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.post h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.postDate {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.postBody {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.post button {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.post button:hover {
+  background-color: #c82333;
+}
+
+.post a {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.post a:hover {
+  background-color: #0056b3;
+}
+
+.PostPage h2 {
+  color: #e629e6;
+  margin-bottom: 0.5rem;
+}
+
+.PostPage p {
+  color: #555;
+}
+
+.PostPage p a {
+  color: #007bff;
+  text-decoration: underline;
+}
